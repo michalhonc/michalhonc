@@ -1,0 +1,86 @@
+.footer {
+  background-color: var(--c-gamma);
+  padding: var(--sp-40) 0;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.logo {
+  width: 336px;
+  height: 96px;
+
+  @media (max-width: 900px) {
+    width: 250px;
+    & svg {
+      width: 250px;
+    }
+  }
+}
+
+.social {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: var(--sp-16) 0;
+
+  @media (max-width: 900px) {
+    margin: var(--sp-10) 0;
+  }
+
+  & > li {
+    transition: all 0.2s;
+    transform: translateY(0);
+    &:hover {
+      transform: translateY(-0.2rem);
+    }
+
+    &:not(:last-of-type) {
+      margin-right: var(--sp-20);
+    }
+
+    @media (max-width: 900px) {
+      &:not(:last-of-type) {
+        margin-right: var(--sp-6);
+      }
+
+      & svg {
+        height: 36px;
+      }
+    }
+  }
+}
+
+.email {
+  font-size: var(--fs-2xl);
+  line-height: 28px;
+  color: var(--c-beta);
+}
+
+.ex {
+  position: absolute;
+  bottom: 50px;
+  left: 100px;
+
+  @media (max-width: 800px) {
+    bottom: -90px;
+    left: 70px;
+  }
+}
+
+.curve {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+
+  @media (max-width: 800px) {
+    top: -140px;
+  }
+}

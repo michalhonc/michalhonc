@@ -1,0 +1,33 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
+}
+
+body {
+  background-color: var(--c-alpha);
+  color: var(--c-beta);
+  overflow-x: hidden;
+}
+
+svg {
+  fill: var(--c-beta);
+}
+
+a {
+  text-decoration: none;
+}
+
+.underline-alpha--light {
+  transition-duration: 0.2s;
+  box-shadow: inset 0 -0.6em var(--c-alpha--light);
+}
+
+.underline-alpha--light:hover {
+  /*box-shadow: inset 0 0 var(--c-alpha--light);*/
+}
+
+.underline-alpha {
+  box-shadow: inset 0 -0.6em var(--c-alpha);
+}

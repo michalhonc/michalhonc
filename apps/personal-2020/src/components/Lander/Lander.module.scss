@@ -1,0 +1,110 @@
+.container {
+  background-color: var(--c-alpha);
+  padding-bottom: var(--sp-12);
+}
+
+.lander {
+  max-width: var(--max-width);
+  margin: var(--sp-64) auto;
+
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 1200px) {
+    flex-direction: column-reverse;
+    text-align: center;
+    margin: var(--sp-48) auto;
+  }
+}
+
+.content {
+  @media (max-width: 1200px) {
+    padding-bottom: var(--sp-56);
+  }
+
+  &Name {
+    font-size: var(--fs-4xl);
+    color: var(--c-gamma);
+    font-weight: 700;
+  }
+
+  &Email {
+    font-size: var(--fs-2xl);
+    color: var(--c-beta);
+  }
+
+  & h1 {
+    background: linear-gradient(45deg, var(--c-beta), var(--c-beta--light));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: var(--fs-6xl);
+    color: var(--c-beta);
+    font-weight: 700;
+
+    @media (max-width: 1200px) {
+      font-size: var(--fs-4xl);
+    }
+
+    @media (max-width: 600px) {
+      font-size: var(--fs-3xl);
+    }
+  }
+}
+.waves {
+  position: absolute;
+  top: -160px;
+  right: 0;
+
+  @media (max-width: 1200px) {
+    right: 20px;
+  }
+
+  @media (max-width: 900px) {
+    & svg {
+      width: 150px;
+    }
+  }
+}
+
+.birds {
+  position: absolute;
+  bottom: -60%;
+  right: 150px;
+
+  @media (max-width: 1200px) {
+    display: none;
+  }
+}
+
+.phoneLight {
+  bottom: -19rem;
+  position: absolute;
+  left: 0;
+
+  @media (max-width: 1200px) {
+    bottom: -28rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    & > svg {
+      width: 280px;
+    }
+  }
+}
+
+.ovals {
+  bottom: -16rem; // 16rem padding of lander + 16rem margin of container  
+  position: absolute;
+  left: -2rem;
+
+  @media (max-width: 1200px) {
+    left: calc(50% - 3rem);
+    transform: translateX(-50%);
+    bottom: -21rem;
+
+    & > svg {
+      width: 80%;
+    }
+  }
+}

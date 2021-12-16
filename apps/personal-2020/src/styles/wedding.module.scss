@@ -1,0 +1,133 @@
+@font-face {
+  font-family: Garamond;
+  font-weight: 400;
+  src: url(/fonts/garamond.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Gilda;
+  font-weight: 400;
+  src: url(/fonts/gilda.ttf) format("truetype");
+}
+
+.container {
+  background: white !important;
+  color: #242938;
+  font-family: Garamond;
+  font-size: 36px;
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 18px;
+  }
+}
+
+.wrapper {
+  max-width: 650px;
+  padding: 15px;
+  margin: 0 auto;
+  padding-top: 140px;
+
+  @media screen and (max-width: 500px) {
+    padding-top: 100px;
+  }
+  @media screen and (max-width: 500px) {
+    padding-top: 50px;
+  }
+
+  & > * {
+    padding-bottom: 75px;
+
+    @media screen and (max-width: 768px) {
+      padding-bottom: 60px;
+    }
+    @media screen and (max-width: 500px) {
+      padding-bottom: 50px;
+    }
+  }
+}
+
+.info li {
+  list-style: none;
+}
+
+.link {
+  color: black;
+  text-decoration: underline;
+}
+
+.map {
+  width: 100%;
+  max-width: 620px;
+  height: 430px;
+}
+
+.mhd {
+  width: 100%;
+  max-width: 620px;
+  height: 830px;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+
+  & > *:first-child {
+    font-size: 48px;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+
+    & > *:first-child {
+      font-size: 36px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 16px;
+
+    & > *:first-child {
+      font-size: 24px;
+    }
+  }
+
+}
+
+.ampersand {
+  color: #e4b4b0;
+  font-family: Gilda;
+  font-size: 48px;
+  @media screen and (max-width: 768px) {
+    font-size: 36px;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 24px;
+  }
+}
+
+.date {
+  & > b {
+    font-size: 48px;
+    @media screen and (max-width: 500px) {
+      font-size: 24px;
+    }
+  }
+}
+
+.pink {
+  color: #e4b4b0;
+}
+
+.image {
+
+}
