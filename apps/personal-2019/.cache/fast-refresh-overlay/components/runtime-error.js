@@ -1,24 +1,24 @@
-import React from "react"
-import StackTrace from "stack-trace"
-import Overlay from "./overlay"
-import { prettifyStack } from "../utils"
-import CodeFrame from "./code-frame"
+import React from "react";
+import StackTrace from "stack-trace";
+import Overlay from "./overlay";
+import { prettifyStack } from "../utils";
+import CodeFrame from "./code-frame";
 
 function formatFilename(filename) {
-  const htmlMatch = /^https?:\/\/(.*)\/(.*)/.exec(filename)
+  const htmlMatch = /^https?:\/\/(.*)\/(.*)/.exec(filename);
   if (htmlMatch && htmlMatch[1] && htmlMatch[2]) {
-    return htmlMatch[2]
+    return htmlMatch[2];
   }
 
-  const sourceMatch = /^webpack-internal:\/\/\/(.*)$/.exec(filename)
+  const sourceMatch = /^webpack-internal:\/\/\/(.*)$/.exec(filename);
   if (sourceMatch && sourceMatch[1]) {
-    return sourceMatch[1]
+    return sourceMatch[1];
   }
 
-  return filename
+  return filename;
 }
 
-const useFetch = url => {
+const useFetch = (url) => {
   const [response, setResponse] = React.useState({
     decoded: null,
     sourcePosition: {
@@ -26,51 +26,47 @@ const useFetch = url => {
       number: null,
     },
     sourceContent: null,
-  })
+  });
   React.useEffect(() => {
     async function fetchData() {
-      const res = await fetch(url)
-      const json = await res.json()
-      const decoded = prettifyStack(json.codeFrame)
-      const { sourcePosition, sourceContent } = json
+      const res = await fetch(url);
+      const json = await res.json();
+      const decoded = prettifyStack(json.codeFrame);
+      const { sourcePosition, sourceContent } = json;
       setResponse({
         decoded,
         sourceContent,
         sourcePosition,
-      })
+      });
     }
-    fetchData()
-  }, [])
-  return response
-}
+    fetchData();
+  }, []);
+  return response;
+};
 
 function getCodeFrameInformation(stackTrace) {
-  const callSite = stackTrace.find(CallSite => CallSite.getFileName())
+  const callSite = stackTrace.find((CallSite) => CallSite.getFileName());
   if (!callSite) {
-    return null
+    return null;
   }
 
-  const moduleId = formatFilename(callSite.getFileName())
-  const lineNumber = callSite.getLineNumber()
-  const columnNumber = callSite.getColumnNumber()
-  const functionName = callSite.getFunctionName()
+  const moduleId = formatFilename(callSite.getFileName());
+  const lineNumber = callSite.getLineNumber();
+  const columnNumber = callSite.getColumnNumber();
+  const functionName = callSite.getFunctionName();
 
   return {
     moduleId,
     lineNumber,
     columnNumber,
     functionName,
-  }
+  };
 }
 
 const RuntimeError = ({ error, open, dismiss }) => {
-  const stacktrace = StackTrace.parse(error.error)
-  const {
-    moduleId,
-    lineNumber,
-    columnNumber,
-    functionName,
-  } = getCodeFrameInformation(stacktrace)
+  const stacktrace = StackTrace.parse(error.error);
+  const { moduleId, lineNumber, columnNumber, functionName } =
+    getCodeFrameInformation(stacktrace);
 
   const res = useFetch(
     `/__original-stack-frame?moduleId=` +
@@ -79,7 +75,7 @@ const RuntimeError = ({ error, open, dismiss }) => {
       window.encodeURIComponent(lineNumber) +
       `&columnNumber=` +
       window.encodeURIComponent(columnNumber)
-  )
+  );
 
   const header = (
     <>
@@ -94,7 +90,7 @@ const RuntimeError = ({ error, open, dismiss }) => {
         Open in editor
       </button>
     </>
-  )
+  );
   const body = (
     <>
       <p data-gatsby-overlay="body__error-message-header">
@@ -103,9 +99,9 @@ const RuntimeError = ({ error, open, dismiss }) => {
       <p data-gatsby-overlay="body__error-message">{error.error.message}</p>
       <CodeFrame decoded={res.decoded} />
     </>
-  )
+  );
 
-  return <Overlay header={header} body={body} dismiss={dismiss} />
-}
+  return <Overlay header={header} body={body} dismiss={dismiss} />;
+};
 
-export default RuntimeError
+export default RuntimeError;

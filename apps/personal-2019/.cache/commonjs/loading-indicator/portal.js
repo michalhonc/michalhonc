@@ -16,11 +16,11 @@ var _reactDom = require("react-dom");
 class ShadowPortal extends React.Component {
   constructor(...args) {
     super(...args);
-    this.mountNode = /*#__PURE__*/React.createRef(null);
-    this.portalNode = /*#__PURE__*/React.createRef(null);
-    this.shadowNode = /*#__PURE__*/React.createRef(null);
+    this.mountNode = /*#__PURE__*/ React.createRef(null);
+    this.portalNode = /*#__PURE__*/ React.createRef(null);
+    this.shadowNode = /*#__PURE__*/ React.createRef(null);
     this.state = {
-      createdElement: false
+      createdElement: false,
     };
   }
 
@@ -28,26 +28,32 @@ class ShadowPortal extends React.Component {
     const ownerDocument = this.mountNode.current.ownerDocument;
     this.portalNode.current = ownerDocument.createElement(`gatsby-portal`);
     this.shadowNode.current = this.portalNode.current.attachShadow({
-      mode: `open`
+      mode: `open`,
     });
     ownerDocument.body.appendChild(this.portalNode.current);
     this.setState({
-      createdElement: true
+      createdElement: true,
     });
   }
 
   componentWillUnmount() {
     if (this.portalNode.current && this.portalNode.current.ownerDocument) {
-      this.portalNode.current.ownerDocument.body.removeChild(this.portalNode.current);
+      this.portalNode.current.ownerDocument.body.removeChild(
+        this.portalNode.current
+      );
     }
   }
 
   render() {
-    return this.shadowNode.current ? /*#__PURE__*/(0, _reactDom.createPortal)(this.props.children, this.shadowNode.current) : /*#__PURE__*/React.createElement("span", {
-      ref: this.mountNode
-    });
+    return this.shadowNode.current
+      ? /*#__PURE__*/ (0, _reactDom.createPortal)(
+          this.props.children,
+          this.shadowNode.current
+        )
+      : /*#__PURE__*/ React.createElement("span", {
+          ref: this.mountNode,
+        });
   }
-
 }
 
 var _default = ShadowPortal;

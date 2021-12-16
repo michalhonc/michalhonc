@@ -16,18 +16,18 @@ class LoadingIndicatorEventHandler extends _react.default.Component {
   constructor(...args) {
     super(...args);
     this.state = {
-      visible: false
+      visible: false,
     };
 
     this.show = () => {
       this.setState({
-        visible: true
+        visible: true,
       });
     };
 
     this.hide = () => {
       this.setState({
-        visible: false
+        visible: false,
       });
     };
   }
@@ -45,11 +45,10 @@ class LoadingIndicatorEventHandler extends _react.default.Component {
   }
 
   render() {
-    return /*#__PURE__*/_react.default.createElement(_indicator.Indicator, {
-      visible: this.state.visible
+    return /*#__PURE__*/ _react.default.createElement(_indicator.Indicator, {
+      visible: this.state.visible,
     });
   }
-
 }
 
 exports.LoadingIndicatorEventHandler = LoadingIndicatorEventHandler;

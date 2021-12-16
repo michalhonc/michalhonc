@@ -1,11 +1,11 @@
-import React from "react"
+import React from "react";
 
 function css(strings, ...keys) {
-  const lastIndex = strings.length - 1
+  const lastIndex = strings.length - 1;
   return (
     strings.slice(0, lastIndex).reduce((p, s, i) => p + s + keys[i], ``) +
     strings[lastIndex]
-  )
+  );
 }
 
 const Style = () => (
@@ -165,6 +165,6 @@ const Style = () => (
       `,
     }}
   />
-)
+);
 
-export default Style
+export default Style;

@@ -19,6 +19,6 @@ function prettifyStack(errorInformation) {
   return _anser.default.ansiToJson(txt, {
     remove_empty: true,
     use_classes: true,
-    json: true
+    json: true,
   });
 }

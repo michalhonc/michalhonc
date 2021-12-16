@@ -57,7 +57,10 @@ const Template = ({ pageContext, intl, location }) => {
             </span>
           </header>
           <figure className="Blog-thumbnail">
-            <img alt="thumbnail" src={frontmatter.thumbnail.childImageSharp.fluid.srcWebp} />
+            <img
+              alt="thumbnail"
+              src={frontmatter.thumbnail.childImageSharp.fluid.srcWebp}
+            />
           </figure>
           <section dangerouslySetInnerHTML={{ __html: html }} />
           <hr />

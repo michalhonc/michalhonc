@@ -20,16 +20,19 @@ function socketIo() {
       try {
         // force websocket as transport
         socket = (0, _socket.default)({
-          transports: [process.env.GATSBY_SOCKET_IO_DEFAULT_TRANSPORT]
+          transports: [process.env.GATSBY_SOCKET_IO_DEFAULT_TRANSPORT],
         }); // when websocket fails, we'll try polling
 
         socket.on(`reconnect_attempt`, () => {
           socket.io.opts.transports = [`polling`, `websocket`];
         });
-        socket.on(`message`, msg => {
+        socket.on(`message`, (msg) => {
           if (msg.type === `overlayError`) {
             if (msg.payload.message) {
-              (0, _errorOverlayHandler.reportError)(msg.payload.id, msg.payload.message);
+              (0, _errorOverlayHandler.reportError)(
+                msg.payload.id,
+                msg.payload.message
+              );
             } else {
               (0, _errorOverlayHandler.clearError)(msg.payload.id);
             }
@@ -55,11 +58,9 @@ function socketIo() {
 // This will help the backend prioritize queries for this
 // path.
 
-
 function registerPath(path) {
   socket.emit(`registerPath`, path);
 } // Unregister the former path
-
 
 function unregisterPath(path) {
   socket.emit(`unregisterPath`, path);

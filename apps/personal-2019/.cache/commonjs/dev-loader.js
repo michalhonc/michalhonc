@@ -11,32 +11,38 @@ var _findPath = require("./find-path");
 
 var _socketIo = _interopRequireDefault(require("./socketIo"));
 
-var _normalizePagePath = _interopRequireDefault(require("./normalize-page-path"));
+var _normalizePagePath = _interopRequireDefault(
+  require("./normalize-page-path")
+);
 
 var _isEqual = _interopRequireDefault(require("lodash/isEqual"));
 
 // TODO move away from lodash
 function mergePageEntry(cachedPage, newPageData) {
-  return { ...cachedPage,
-    payload: { ...cachedPage.payload,
+  return {
+    ...cachedPage,
+    payload: {
+      ...cachedPage.payload,
       json: newPageData.result,
-      page: { ...cachedPage.payload.page,
-        staticQueryResults: newPageData.staticQueryResults
-      }
-    }
+      page: {
+        ...cachedPage.payload.page,
+        staticQueryResults: newPageData.staticQueryResults,
+      },
+    },
   };
 }
 
 class DevLoader extends _loader.BaseLoader {
   constructor(syncRequires, matchPaths) {
-    const loadComponent = chunkName => Promise.resolve(syncRequires.components[chunkName]);
+    const loadComponent = (chunkName) =>
+      Promise.resolve(syncRequires.components[chunkName]);
 
     super(loadComponent, matchPaths);
     const socket = (0, _socketIo.default)();
     this.notFoundPagePathsInCaches = new Set();
 
     if (socket) {
-      socket.on(`message`, msg => {
+      socket.on(`message`, (msg) => {
         if (msg.type === `staticQueryResult`) {
           this.handleStaticQueryResultHotUpdate(msg);
         } else if (msg.type === `pageQueryResult`) {
@@ -52,7 +58,7 @@ class DevLoader extends _loader.BaseLoader {
 
   loadPage(pagePath) {
     const realPath = (0, _findPath.findPath)(pagePath);
-    return super.loadPage(realPath).then(result => {
+    return super.loadPage(realPath).then((result) => {
       if (this.isPageNotFound(realPath)) {
         this.notFoundPagePathsInCaches.add(realPath);
       }
@@ -62,12 +68,19 @@ class DevLoader extends _loader.BaseLoader {
   }
 
   loadPageDataJson(rawPath) {
-    return super.loadPageDataJson(rawPath).then(data => {
+    return super.loadPageDataJson(rawPath).then((data) => {
       // when we can't find a proper 404.html we fallback to dev-404-page
       // we need to make sure to mark it as not found.
-      if (data.status === _loader.PageResourceStatus.Error && rawPath !== `/dev-404-page/`) {
-        console.error(`404 page could not be found. Checkout https://www.gatsbyjs.org/docs/how-to/adding-common-features/add-404-page/`);
-        return this.loadPageDataJson(`/dev-404-page/`).then(result => Object.assign({}, data, result));
+      if (
+        data.status === _loader.PageResourceStatus.Error &&
+        rawPath !== `/dev-404-page/`
+      ) {
+        console.error(
+          `404 page could not be found. Checkout https://www.gatsbyjs.org/docs/how-to/adding-common-features/add-404-page/`
+        );
+        return this.loadPageDataJson(`/dev-404-page/`).then((result) =>
+          Object.assign({}, data, result)
+        );
       }
 
       return data;
@@ -79,7 +92,7 @@ class DevLoader extends _loader.BaseLoader {
       return Promise.resolve();
     }
 
-    return super.doPrefetch(pagePath).then(result => result.payload);
+    return super.doPrefetch(pagePath).then((result) => result.payload);
   }
 
   handleStaticQueryResultHotUpdate(msg) {
@@ -99,7 +112,11 @@ class DevLoader extends _loader.BaseLoader {
 
     const newPageData = msg.payload.result;
     const pageDataDbCacheKey = (0, _normalizePagePath.default)(msg.payload.id);
-    const cachedPageData = (_this$pageDataDb$get = this.pageDataDb.get(pageDataDbCacheKey)) === null || _this$pageDataDb$get === void 0 ? void 0 : _this$pageDataDb$get.payload;
+    const cachedPageData =
+      (_this$pageDataDb$get = this.pageDataDb.get(pageDataDbCacheKey)) ===
+        null || _this$pageDataDb$get === void 0
+        ? void 0
+        : _this$pageDataDb$get.payload;
 
     if (!(0, _isEqual.default)(newPageData, cachedPageData)) {
       // TODO: if this is update for current page and there are any new static queries added
@@ -108,32 +125,38 @@ class DevLoader extends _loader.BaseLoader {
       this.pageDataDb.set(pageDataDbCacheKey, {
         pagePath: pageDataDbCacheKey,
         payload: newPageData,
-        status: `success`
+        status: `success`,
       });
       const cachedPage = this.pageDb.get(pageDataDbCacheKey);
 
       if (cachedPage) {
-        this.pageDb.set(pageDataDbCacheKey, mergePageEntry(cachedPage, newPageData));
+        this.pageDb.set(
+          pageDataDbCacheKey,
+          mergePageEntry(cachedPage, newPageData)
+        );
       } // Additionally if those are query results for "/404.html"
       // we have to update all paths user wanted to visit, but didn't have
       // page for it, because we do store them under (normalized) path
       // user wanted to visit
 
-
       if (pageDataDbCacheKey === `/404.html`) {
-        this.notFoundPagePathsInCaches.forEach(notFoundPath => {
+        this.notFoundPagePathsInCaches.forEach((notFoundPath) => {
           const previousPageDataEntry = this.pageDataDb.get(notFoundPath);
 
           if (previousPageDataEntry) {
-            this.pageDataDb.set(notFoundPath, { ...previousPageDataEntry,
-              payload: newPageData
+            this.pageDataDb.set(notFoundPath, {
+              ...previousPageDataEntry,
+              payload: newPageData,
             });
           }
 
           const previousPageEntry = this.pageDb.get(notFoundPath);
 
           if (previousPageEntry) {
-            this.pageDb.set(notFoundPath, mergePageEntry(previousPageEntry, newPageData));
+            this.pageDb.set(
+              notFoundPath,
+              mergePageEntry(previousPageEntry, newPageData)
+            );
           }
         });
       }
@@ -143,7 +166,7 @@ class DevLoader extends _loader.BaseLoader {
   }
 
   handleStalePageDataMessage(msg) {
-    msg.payload.stalePageDataPaths.forEach(dirtyQueryId => {
+    msg.payload.stalePageDataPaths.forEach((dirtyQueryId) => {
       if (dirtyQueryId === `/dev-404-page/` || dirtyQueryId === `/404.html`) {
         // those pages are not on demand so skipping
         return;
@@ -159,24 +182,20 @@ class DevLoader extends _loader.BaseLoader {
 
       if (cachedPageData) {
         // if we have page data in cache, mark it as stale
-        this.pageDataDb.set(normalizedId, { ...cachedPageData,
-          stale: true
-        });
+        this.pageDataDb.set(normalizedId, { ...cachedPageData, stale: true });
       }
 
       const cachedPage = this.pageDb.get(normalizedId);
 
       if (cachedPage) {
         // if we have page data in cache, mark it as stale
-        this.pageDb.set(normalizedId, { ...cachedPage,
-          payload: { ...cachedPage.payload,
-            stale: true
-          }
+        this.pageDb.set(normalizedId, {
+          ...cachedPage,
+          payload: { ...cachedPage.payload, stale: true },
         });
       }
     });
   }
-
 }
 
 var _default = DevLoader;

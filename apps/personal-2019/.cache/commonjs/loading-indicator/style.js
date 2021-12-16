@@ -9,12 +9,16 @@ var _react = _interopRequireDefault(require("react"));
 
 function css(strings, ...keys) {
   const lastIndex = strings.length - 1;
-  return strings.slice(0, lastIndex).reduce((p, s, i) => p + s + keys[i], ``) + strings[lastIndex];
+  return (
+    strings.slice(0, lastIndex).reduce((p, s, i) => p + s + keys[i], ``) +
+    strings[lastIndex]
+  );
 }
 
-const Style = () => /*#__PURE__*/_react.default.createElement("style", {
-  dangerouslySetInnerHTML: {
-    __html: css`
+const Style = () =>
+  /*#__PURE__*/ _react.default.createElement("style", {
+    dangerouslySetInnerHTML: {
+      __html: css`
         :host {
           --purple-60: #663399;
           --gatsby: var(--purple-60);
@@ -110,9 +114,9 @@ const Style = () => /*#__PURE__*/_react.default.createElement("style", {
             color: var(--purple-20);
           }
         }
-      `
-  }
-});
+      `,
+    },
+  });
 
 var _default = Style;
 exports.default = _default;

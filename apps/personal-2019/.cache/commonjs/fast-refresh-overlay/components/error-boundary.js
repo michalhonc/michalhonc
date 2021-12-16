@@ -11,7 +11,7 @@ class ErrorBoundary extends _react.default.Component {
   constructor(...args) {
     super(...args);
     this.state = {
-      hasError: false
+      hasError: false,
     };
   }
 
@@ -25,14 +25,13 @@ class ErrorBoundary extends _react.default.Component {
 
   static getDerivedStateFromError() {
     return {
-      hasError: true
+      hasError: true,
     };
   }
 
   render() {
     return this.state.hasError ? null : this.props.children;
   }
-
 }
 
 var _default = ErrorBoundary;

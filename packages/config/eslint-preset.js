@@ -6,6 +6,7 @@ module.exports = {
         "apps/docs/",
         "apps/web/",
         "apps/personal-2019",
+        "apps/personal-2020",
         "packages/ui/",
         "packages/config/",
         "packages/tsconfig/",
