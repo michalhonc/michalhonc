@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`instagramFeed renders correctly 1`] = `
+<div
+  className="Social-wrapper"
+>
+  <div
+    className="Social-icon"
+  >
+    <test-file-stub />
+  </div>
+  <a
+    className="underline Social-profile"
+    href="https://www.instagram.com/michalhonc.cz/"
+  >
+    @michalhonc.cz
+  </a>
+  <div
+    className="Social-content InstagramFeed"
+  />
+</div>
+`;

@@ -1,0 +1,80 @@
+@keyframes loading {
+  to {
+    background-position: 350% 0;
+  }
+}
+
+.InstagramFeed {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.5rem;
+
+  @include respond(phone) {
+    justify-content: center;
+  }
+
+  & a {
+    position: relative;
+    margin: 0.5rem;
+  }
+
+  &-imageWrapper {
+     display: flex;
+     align-items: flex-start; // iOS sets align-items: streched which causes bug
+     overflow: hidden;
+
+    &--fake {
+      width: 20rem;
+      height: 20rem;
+      background-color: var(--c-alpha);
+    }
+
+  }
+
+  & img {
+    min-height: 100%;
+    width: auto;
+    transition: all 0.2s;
+
+    &:hover {
+      transform: scale(1.1) rotate(1deg);
+    }
+
+    @include respond(phone) {
+      height: auto;
+      max-width: 15rem;
+    }
+  }
+
+  &-meta {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    height: 3rem;
+    background: rgba(4, 119, 106, 0.4);
+    padding: 0 2rem 0 1rem;
+    border-radius: 0 2rem 0 0;
+
+    & span {
+      display: flex;
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+      font-weight: bold;
+      color: var(--c-white);
+
+      &:not(:last-of-type) {
+        margin-right: 1.5rem;
+      }
+    }
+
+    & svg {
+      width: 1.6rem;
+      height: 1.6rem;
+      fill: var(--c-white);
+      margin-left: 0.5rem;
+    }
+  }
+}

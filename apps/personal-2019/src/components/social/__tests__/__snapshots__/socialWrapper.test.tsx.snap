@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`socialWrapper renders correctly 1`] = `
+<div
+  className="Social-wrapper"
+>
+  <div
+    className="Social-icon"
+  >
+    <0123 />
+  </div>
+  <a
+    className="underline Social-profile"
+    href="https://example.com"
+  >
+    @profile
+  </a>
+  <div
+    className="Social-content className"
+  >
+    <div>
+      Test div
+    </div>
+  </div>
+</div>
+`;

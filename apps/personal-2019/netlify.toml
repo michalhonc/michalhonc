@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  function = "functions"
+  publish = "public/"
+
+[dev]
+  command = "npm run dev"
+  port = 8080 # Port that the dev server will be accessible on
+  publish = "public/"

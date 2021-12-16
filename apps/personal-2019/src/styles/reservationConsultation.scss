@@ -1,0 +1,27 @@
+.ReservationConsultation {
+  font-size: 1.8rem;
+  color: #fff;
+  padding: 1.5rem 3rem;
+  background-color: #3D3F4C;
+  border-radius: 8rem;
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+	transition: all 0.2s ease-out;
+	transform: translateY(0);
+	outline: none;
+
+  @include respond('phone') {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    max-width: 20rem;
+  }
+
+	&:focus,
+	&:hover {
+		transform: translateY(-0.2rem);
+		box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.5);
+	}
+
+	&:active {
+		transform: translateY(-0.1rem);
+	}
+}

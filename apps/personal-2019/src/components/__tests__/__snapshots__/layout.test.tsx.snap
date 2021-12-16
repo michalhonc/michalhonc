@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`layout renders correctly 1`] = `
+<div
+  className="Layout"
+>
+  <div>
+    <main />
+    <footer
+      id="kontakty"
+    >
+      <test-file-stub />
+      <ul>
+        <li>
+          <a
+            aria-label="mobile"
+            href="tel:+420733209581"
+          >
+            <test-file-stub />
+          </a>
+        </li>
+        <li>
+          <a
+            aria-label="WhatsApp"
+            href="https://wa.me/420733209581"
+          >
+            <test-file-stub />
+          </a>
+        </li>
+        <li>
+          <a
+            aria-label="Twitter"
+            href="https://twitter.com/michalhonc"
+          >
+            <test-file-stub />
+          </a>
+        </li>
+        <li>
+          <a
+            aria-label="LinkedIn"
+            href="https://linkedin.com/in/michalhonc/"
+          >
+            <test-file-stub />
+          </a>
+        </li>
+        <li>
+          <a
+            aria-label="Instagram"
+            href="https://instagram.com/michalhonc.cz/"
+          >
+            <test-file-stub />
+          </a>
+        </li>
+        <li>
+          <a
+            aria-label="E-mail"
+            href="mailto:info@michalhonc.cz"
+          >
+            <test-file-stub />
+          </a>
+        </li>
+      </ul>
+      <small
+        className="underline"
+      >
+        2020
+         
+        Michal Honc |
+         
+        <a
+          href="mailto:info@michalhonc.cz"
+          title="E-mail"
+        >
+          info@michalhonc.cz
+        </a>
+      </small>
+    </footer>
+  </div>
+</div>
+`;

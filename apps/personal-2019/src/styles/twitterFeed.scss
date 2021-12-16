@@ -1,0 +1,49 @@
+.TwitterFeed {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+
+  & a {
+    display: flex;
+    align-items: center;
+
+    @include respond(phone) {
+      &:not(:last-of-type) {
+        padding-bottom: 1.5rem;
+      }
+    }
+
+    &:hover {
+      & .TwitterFeed-tweet {
+        text-decoration: underline;
+      }
+
+      & img {
+        transform: scale(1.1) rotate(1deg);
+      }
+    }
+  }
+
+  &-imageWrapper {
+     display: flex;
+     overflow: hidden;
+     flex-shrink: 0;
+  }
+
+  & img {
+    transition: all 0.2s;
+    margin-left: 0.2rem;
+
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  &-tweet {
+    color: var(--c-beta);
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+
+  }
+}

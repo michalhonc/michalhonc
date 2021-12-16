@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`social root renders correctly 1`] = `
+<section
+  className="Container Social"
+  id="portoflio"
+>
+  <div
+    className="Social-wrapper"
+  >
+    <div
+      className="Social-icon"
+    >
+      <test-file-stub />
+    </div>
+    <a
+      className="underline Social-profile"
+      href="https://www.instagram.com/michalhonc.cz/"
+    >
+      @michalhonc.cz
+    </a>
+    <div
+      className="Social-content InstagramFeed"
+    />
+  </div>
+  <div
+    className="Social-wrapper"
+  >
+    <div
+      className="Social-icon"
+    >
+      <test-file-stub />
+    </div>
+    <a
+      className="underline Social-profile"
+      href="https://twitter.com/Michalhonc"
+    >
+      @michalhonc
+    </a>
+    <div
+      className="Social-content TwitterFeed"
+    />
+  </div>
+</section>
+`;

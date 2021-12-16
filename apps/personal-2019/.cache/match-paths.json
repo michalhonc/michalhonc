@@ -1,0 +1,258 @@
+[
+    {
+        "path": "/cs/blog/5-canny-tricks-for-react-devs/amp",
+        "matchPath": "/cs/blog/5-canny-tricks-for-react-devs/amp"
+    },
+    {
+        "path": "/cs/blog/5-triku-pro-vyvojare-reactu/amp",
+        "matchPath": "/cs/blog/5-triku-pro-vyvojare-reactu/amp"
+    },
+    {
+        "path": "/cs/blog/7-ways-to-bypass-adblock/amp",
+        "matchPath": "/cs/blog/7-ways-to-bypass-adblock/amp"
+    },
+    {
+        "path": "/cs/blog/7-zpusobu-jak-obejit-adblock/amp",
+        "matchPath": "/cs/blog/7-zpusobu-jak-obejit-adblock/amp"
+    },
+    {
+        "path": "/cs/blog/concurrent-mode-a-suspense-v-reactjs-1/amp",
+        "matchPath": "/cs/blog/concurrent-mode-a-suspense-v-reactjs-1/amp"
+    },
+    {
+        "path": "/cs/blog/concurrent-mode-and-suspense-in-reactjs-1/amp",
+        "matchPath": "/cs/blog/concurrent-mode-and-suspense-in-reactjs-1/amp"
+    },
+    {
+        "path": "/cs/blog/continuous-deployment-for-free/amp",
+        "matchPath": "/cs/blog/continuous-deployment-for-free/amp"
+    },
+    {
+        "path": "/cs/blog/continuous-deployment-zdarma/amp",
+        "matchPath": "/cs/blog/continuous-deployment-zdarma/amp"
+    },
+    {
+        "path": "/cs/blog/difference-between-event-targets-in-javascript/amp",
+        "matchPath": "/cs/blog/difference-between-event-targets-in-javascript/amp"
+    },
+    {
+        "path": "/cs/blog/difference-between-inherit-initial-unset-and-revert/amp",
+        "matchPath": "/cs/blog/difference-between-inherit-initial-unset-and-revert/amp"
+    },
+    {
+        "path": "/cs/blog/rozdil-mezi-event-targets-v-javascriptu/amp",
+        "matchPath": "/cs/blog/rozdil-mezi-event-targets-v-javascriptu/amp"
+    },
+    {
+        "path": "/cs/blog/rozdil-mezi-inherit-initial-unset-a-revert/amp",
+        "matchPath": "/cs/blog/rozdil-mezi-inherit-initial-unset-a-revert/amp"
+    },
+    {
+        "path": "/cs/blog/variable-fonts/amp",
+        "matchPath": "/cs/blog/variable-fonts/amp"
+    },
+    {
+        "path": "/cs/blog/variable-fonty/amp",
+        "matchPath": "/cs/blog/variable-fonty/amp"
+    },
+    {
+        "path": "/en/blog/5-canny-tricks-for-react-devs/amp",
+        "matchPath": "/en/blog/5-canny-tricks-for-react-devs/amp"
+    },
+    {
+        "path": "/en/blog/5-triku-pro-vyvojare-reactu/amp",
+        "matchPath": "/en/blog/5-triku-pro-vyvojare-reactu/amp"
+    },
+    {
+        "path": "/en/blog/7-ways-to-bypass-adblock/amp",
+        "matchPath": "/en/blog/7-ways-to-bypass-adblock/amp"
+    },
+    {
+        "path": "/en/blog/7-zpusobu-jak-obejit-adblock/amp",
+        "matchPath": "/en/blog/7-zpusobu-jak-obejit-adblock/amp"
+    },
+    {
+        "path": "/en/blog/concurrent-mode-a-suspense-v-reactjs-1/amp",
+        "matchPath": "/en/blog/concurrent-mode-a-suspense-v-reactjs-1/amp"
+    },
+    {
+        "path": "/en/blog/concurrent-mode-and-suspense-in-reactjs-1/amp",
+        "matchPath": "/en/blog/concurrent-mode-and-suspense-in-reactjs-1/amp"
+    },
+    {
+        "path": "/en/blog/continuous-deployment-for-free/amp",
+        "matchPath": "/en/blog/continuous-deployment-for-free/amp"
+    },
+    {
+        "path": "/en/blog/continuous-deployment-zdarma/amp",
+        "matchPath": "/en/blog/continuous-deployment-zdarma/amp"
+    },
+    {
+        "path": "/en/blog/difference-between-event-targets-in-javascript/amp",
+        "matchPath": "/en/blog/difference-between-event-targets-in-javascript/amp"
+    },
+    {
+        "path": "/en/blog/difference-between-inherit-initial-unset-and-revert/amp",
+        "matchPath": "/en/blog/difference-between-inherit-initial-unset-and-revert/amp"
+    },
+    {
+        "path": "/en/blog/rozdil-mezi-event-targets-v-javascriptu/amp",
+        "matchPath": "/en/blog/rozdil-mezi-event-targets-v-javascriptu/amp"
+    },
+    {
+        "path": "/en/blog/rozdil-mezi-inherit-initial-unset-a-revert/amp",
+        "matchPath": "/en/blog/rozdil-mezi-inherit-initial-unset-a-revert/amp"
+    },
+    {
+        "path": "/en/blog/variable-fonts/amp",
+        "matchPath": "/en/blog/variable-fonts/amp"
+    },
+    {
+        "path": "/en/blog/variable-fonty/amp",
+        "matchPath": "/en/blog/variable-fonty/amp"
+    },
+    {
+        "path": "/cs/blog/5-canny-tricks-for-react-devs",
+        "matchPath": "/cs/blog/5-canny-tricks-for-react-devs"
+    },
+    {
+        "path": "/cs/blog/5-triku-pro-vyvojare-reactu",
+        "matchPath": "/cs/blog/5-triku-pro-vyvojare-reactu"
+    },
+    {
+        "path": "/cs/blog/7-ways-to-bypass-adblock",
+        "matchPath": "/cs/blog/7-ways-to-bypass-adblock"
+    },
+    {
+        "path": "/cs/blog/7-zpusobu-jak-obejit-adblock",
+        "matchPath": "/cs/blog/7-zpusobu-jak-obejit-adblock"
+    },
+    {
+        "path": "/cs/blog/concurrent-mode-a-suspense-v-reactjs-1",
+        "matchPath": "/cs/blog/concurrent-mode-a-suspense-v-reactjs-1"
+    },
+    {
+        "path": "/cs/blog/concurrent-mode-and-suspense-in-reactjs-1",
+        "matchPath": "/cs/blog/concurrent-mode-and-suspense-in-reactjs-1"
+    },
+    {
+        "path": "/cs/blog/continuous-deployment-for-free",
+        "matchPath": "/cs/blog/continuous-deployment-for-free"
+    },
+    {
+        "path": "/cs/blog/continuous-deployment-zdarma",
+        "matchPath": "/cs/blog/continuous-deployment-zdarma"
+    },
+    {
+        "path": "/cs/blog/difference-between-event-targets-in-javascript",
+        "matchPath": "/cs/blog/difference-between-event-targets-in-javascript"
+    },
+    {
+        "path": "/cs/blog/difference-between-inherit-initial-unset-and-revert",
+        "matchPath": "/cs/blog/difference-between-inherit-initial-unset-and-revert"
+    },
+    {
+        "path": "/cs/blog/rozdil-mezi-event-targets-v-javascriptu",
+        "matchPath": "/cs/blog/rozdil-mezi-event-targets-v-javascriptu"
+    },
+    {
+        "path": "/cs/blog/rozdil-mezi-inherit-initial-unset-a-revert",
+        "matchPath": "/cs/blog/rozdil-mezi-inherit-initial-unset-a-revert"
+    },
+    {
+        "path": "/cs/blog/variable-fonts",
+        "matchPath": "/cs/blog/variable-fonts"
+    },
+    {
+        "path": "/cs/blog/variable-fonty",
+        "matchPath": "/cs/blog/variable-fonty"
+    },
+    {
+        "path": "/en/blog/5-canny-tricks-for-react-devs",
+        "matchPath": "/en/blog/5-canny-tricks-for-react-devs"
+    },
+    {
+        "path": "/en/blog/5-triku-pro-vyvojare-reactu",
+        "matchPath": "/en/blog/5-triku-pro-vyvojare-reactu"
+    },
+    {
+        "path": "/en/blog/7-ways-to-bypass-adblock",
+        "matchPath": "/en/blog/7-ways-to-bypass-adblock"
+    },
+    {
+        "path": "/en/blog/7-zpusobu-jak-obejit-adblock",
+        "matchPath": "/en/blog/7-zpusobu-jak-obejit-adblock"
+    },
+    {
+        "path": "/en/blog/concurrent-mode-a-suspense-v-reactjs-1",
+        "matchPath": "/en/blog/concurrent-mode-a-suspense-v-reactjs-1"
+    },
+    {
+        "path": "/en/blog/concurrent-mode-and-suspense-in-reactjs-1",
+        "matchPath": "/en/blog/concurrent-mode-and-suspense-in-reactjs-1"
+    },
+    {
+        "path": "/en/blog/continuous-deployment-for-free",
+        "matchPath": "/en/blog/continuous-deployment-for-free"
+    },
+    {
+        "path": "/en/blog/continuous-deployment-zdarma",
+        "matchPath": "/en/blog/continuous-deployment-zdarma"
+    },
+    {
+        "path": "/en/blog/difference-between-event-targets-in-javascript",
+        "matchPath": "/en/blog/difference-between-event-targets-in-javascript"
+    },
+    {
+        "path": "/en/blog/difference-between-inherit-initial-unset-and-revert",
+        "matchPath": "/en/blog/difference-between-inherit-initial-unset-and-revert"
+    },
+    {
+        "path": "/en/blog/rozdil-mezi-event-targets-v-javascriptu",
+        "matchPath": "/en/blog/rozdil-mezi-event-targets-v-javascriptu"
+    },
+    {
+        "path": "/en/blog/rozdil-mezi-inherit-initial-unset-a-revert",
+        "matchPath": "/en/blog/rozdil-mezi-inherit-initial-unset-a-revert"
+    },
+    {
+        "path": "/en/blog/variable-fonts",
+        "matchPath": "/en/blog/variable-fonts"
+    },
+    {
+        "path": "/en/blog/variable-fonty",
+        "matchPath": "/en/blog/variable-fonty"
+    },
+    {
+        "path": "/cs/blog/",
+        "matchPath": "/cs/blog/"
+    },
+    {
+        "path": "/cs/dev-404-page/",
+        "matchPath": "/cs/dev-404-page/"
+    },
+    {
+        "path": "/en/blog/",
+        "matchPath": "/en/blog/"
+    },
+    {
+        "path": "/en/dev-404-page/",
+        "matchPath": "/en/dev-404-page/"
+    },
+    {
+        "path": "/cs/",
+        "matchPath": "/cs/"
+    },
+    {
+        "path": "/en/",
+        "matchPath": "/en/"
+    },
+    {
+        "path": "/cs/404/",
+        "matchPath": "/cs/*"
+    },
+    {
+        "path": "/en/404/",
+        "matchPath": "/en/*"
+    }
+]

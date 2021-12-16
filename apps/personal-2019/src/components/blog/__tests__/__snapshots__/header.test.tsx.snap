@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Blog] header renders correctly 1`] = `
+<div
+  className="Blog-header"
+>
+  <div
+    className="Header-logo"
+  >
+    <div>
+      <test-file-stub
+        className="Header-logo-background"
+      />
+      <a
+        aria-label="Michal Honc Logo"
+        href="/en-US/"
+        onClick={[Function]}
+      >
+        <test-file-stub
+          className="Header-logo-foreground"
+        />
+      </a>
+    </div>
+  </div>
+  <nav>
+    <ul
+      className="Header-navigation"
+    >
+      <li>
+        <a
+          href="/en-US/"
+          onClick={[Function]}
+        >
+          O mně
+        </a>
+      </li>
+      <li>
+        <a
+          href="/en-US/blog"
+          onClick={[Function]}
+        >
+          Blog
+        </a>
+      </li>
+      <li>
+        <a
+          href="/en-US/#kontakty"
+          onClick={[Function]}
+        >
+          Kontakty
+        </a>
+      </li>
+    </ul>
+    <button
+      aria-label="Change language to english"
+      className="Header-changeLocale"
+      onClick={[Function]}
+      type="button"
+    >
+      <test-file-stub />
+    </button>
+  </nav>
+</div>
+`;

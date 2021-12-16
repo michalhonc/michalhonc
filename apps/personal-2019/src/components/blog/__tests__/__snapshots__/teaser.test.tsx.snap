@@ -1,0 +1,291 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`teaser renders correctly 1`] = `
+<section
+  className="Container Teaser"
+>
+  <h2
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Nejnovější články na <span class='underline'>blogu</span>",
+      }
+    }
+  />
+  <div
+    className="Teaser-wrapper"
+  >
+    <article>
+      <a
+        aria-label="Link to blog post: 5 triků pro vývojáře Reactu"
+        href="/en-US/blog/5-triku-pro-vyvojare-reactu"
+        onClick={[Function]}
+      >
+        <div
+          className=" gatsby-image-wrapper"
+          style={
+            Object {
+              "overflow": "hidden",
+              "position": "relative",
+            }
+          }
+        >
+          <div
+            aria-hidden={true}
+            style={
+              Object {
+                "paddingBottom": "70.5%",
+                "width": "100%",
+              }
+            }
+          />
+          <picture>
+            <source
+              sizes="(max-width: 704px) 100vw, 704px"
+              srcSet="/static/4e57a90ee8c2f36cfe0eba16def56413/69585/5_canny_react_tricks.png 200w,
+/static/4e57a90ee8c2f36cfe0eba16def56413/497c6/5_canny_react_tricks.png 400w,
+/static/4e57a90ee8c2f36cfe0eba16def56413/3ee52/5_canny_react_tricks.png 704w"
+            />
+            <img
+              alt=""
+              loading="lazy"
+              onLoad={[Function]}
+              sizes="(max-width: 704px) 100vw, 704px"
+              src="/static/4e57a90ee8c2f36cfe0eba16def56413/3ee52/5_canny_react_tricks.png"
+              srcSet="/static/4e57a90ee8c2f36cfe0eba16def56413/69585/5_canny_react_tricks.png 200w,
+/static/4e57a90ee8c2f36cfe0eba16def56413/497c6/5_canny_react_tricks.png 400w,
+/static/4e57a90ee8c2f36cfe0eba16def56413/3ee52/5_canny_react_tricks.png 704w"
+              style={
+                Object {
+                  "fontFamily": "\\"object-fit: contain; object-position: 50% 50%\\"",
+                  "height": "100%",
+                  "left": 0,
+                  "objectFit": "contain",
+                  "objectPosition": "50% 50%",
+                  "opacity": 0,
+                  "position": "absolute",
+                  "top": 0,
+                  "transition": "opacity 500ms",
+                  "width": "100%",
+                }
+              }
+            />
+          </picture>
+          <noscript
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<picture><source srcset=\\"/static/4e57a90ee8c2f36cfe0eba16def56413/69585/5_canny_react_tricks.png 200w,
+/static/4e57a90ee8c2f36cfe0eba16def56413/497c6/5_canny_react_tricks.png 400w,
+/static/4e57a90ee8c2f36cfe0eba16def56413/3ee52/5_canny_react_tricks.png 704w\\" sizes=\\"(max-width: 704px) 100vw, 704px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 704px) 100vw, 704px\\" srcset=\\"/static/4e57a90ee8c2f36cfe0eba16def56413/69585/5_canny_react_tricks.png 200w,
+/static/4e57a90ee8c2f36cfe0eba16def56413/497c6/5_canny_react_tricks.png 400w,
+/static/4e57a90ee8c2f36cfe0eba16def56413/3ee52/5_canny_react_tricks.png 704w\\" src=\\"/static/4e57a90ee8c2f36cfe0eba16def56413/3ee52/5_canny_react_tricks.png\\" alt=\\"\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+              }
+            }
+          />
+        </div>
+      </a>
+      <div
+        className="Teaser-row"
+      >
+        <h3>
+          5 triků pro vývojáře Reactu
+        </h3>
+        <p>
+          Triky, které Vaši aplikaci nezlepší, ale usnadní vám proces vývoje
+        </p>
+        <a
+          className="underline"
+          href="/en-US/blog/5-triku-pro-vyvojare-reactu"
+          onClick={[Function]}
+        >
+          Více článků
+           
+          »
+        </a>
+      </div>
+    </article>
+    <article>
+      <a
+        aria-label="Link to blog post: 7 způsobů jak obejít AdBlock"
+        href="/en-US/blog/7-zpusobu-jak-obejit-adblock"
+        onClick={[Function]}
+      >
+        <div
+          className=" gatsby-image-wrapper"
+          style={
+            Object {
+              "overflow": "hidden",
+              "position": "relative",
+            }
+          }
+        >
+          <div
+            aria-hidden={true}
+            style={
+              Object {
+                "paddingBottom": "67%",
+                "width": "100%",
+              }
+            }
+          />
+          <picture>
+            <source
+              sizes="(max-width: 500px) 100vw, 500px"
+              srcSet="/static/d96fb15f308d10e6d5035097232fbd35/69585/adblock_thumbnail.png 200w,
+/static/d96fb15f308d10e6d5035097232fbd35/497c6/adblock_thumbnail.png 400w,
+/static/d96fb15f308d10e6d5035097232fbd35/46604/adblock_thumbnail.png 500w"
+            />
+            <img
+              alt=""
+              loading="lazy"
+              onLoad={[Function]}
+              sizes="(max-width: 500px) 100vw, 500px"
+              src="/static/d96fb15f308d10e6d5035097232fbd35/46604/adblock_thumbnail.png"
+              srcSet="/static/d96fb15f308d10e6d5035097232fbd35/69585/adblock_thumbnail.png 200w,
+/static/d96fb15f308d10e6d5035097232fbd35/497c6/adblock_thumbnail.png 400w,
+/static/d96fb15f308d10e6d5035097232fbd35/46604/adblock_thumbnail.png 500w"
+              style={
+                Object {
+                  "fontFamily": "\\"object-fit: contain; object-position: 50% 50%\\"",
+                  "height": "100%",
+                  "left": 0,
+                  "objectFit": "contain",
+                  "objectPosition": "50% 50%",
+                  "opacity": 0,
+                  "position": "absolute",
+                  "top": 0,
+                  "transition": "opacity 500ms",
+                  "width": "100%",
+                }
+              }
+            />
+          </picture>
+          <noscript
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<picture><source srcset=\\"/static/d96fb15f308d10e6d5035097232fbd35/69585/adblock_thumbnail.png 200w,
+/static/d96fb15f308d10e6d5035097232fbd35/497c6/adblock_thumbnail.png 400w,
+/static/d96fb15f308d10e6d5035097232fbd35/46604/adblock_thumbnail.png 500w\\" sizes=\\"(max-width: 500px) 100vw, 500px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 500px) 100vw, 500px\\" srcset=\\"/static/d96fb15f308d10e6d5035097232fbd35/69585/adblock_thumbnail.png 200w,
+/static/d96fb15f308d10e6d5035097232fbd35/497c6/adblock_thumbnail.png 400w,
+/static/d96fb15f308d10e6d5035097232fbd35/46604/adblock_thumbnail.png 500w\\" src=\\"/static/d96fb15f308d10e6d5035097232fbd35/46604/adblock_thumbnail.png\\" alt=\\"\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+              }
+            }
+          />
+        </div>
+      </a>
+      <div
+        className="Teaser-row"
+      >
+        <h3>
+          7 způsobů jak obejít AdBlock
+        </h3>
+        <p>
+          Nepřicházejte kvůli AdBlocku o peníze z reklamy! Zjištěte 7 způsobů jak se proti AdBlocku můžete bránit.
+        </p>
+        <a
+          className="underline"
+          href="/en-US/blog/7-zpusobu-jak-obejit-adblock"
+          onClick={[Function]}
+        >
+          Více článků
+           
+          »
+        </a>
+      </div>
+    </article>
+    <article>
+      <a
+        aria-label="Link to blog post: Continuous development zdarma s Github, Travis CI a Heroku"
+        href="/en-US/blog/continuous-deployment-zdarma"
+        onClick={[Function]}
+      >
+        <div
+          className=" gatsby-image-wrapper"
+          style={
+            Object {
+              "overflow": "hidden",
+              "position": "relative",
+            }
+          }
+        >
+          <div
+            aria-hidden={true}
+            style={
+              Object {
+                "paddingBottom": "73.5%",
+                "width": "100%",
+              }
+            }
+          />
+          <picture>
+            <source
+              sizes="(max-width: 387px) 100vw, 387px"
+              srcSet="/static/f53b530a16d87556855e6e551c169f83/69585/travis_thumbnail.png 200w,
+/static/f53b530a16d87556855e6e551c169f83/f0c16/travis_thumbnail.png 387w"
+            />
+            <img
+              alt=""
+              loading="lazy"
+              onLoad={[Function]}
+              sizes="(max-width: 387px) 100vw, 387px"
+              src="/static/f53b530a16d87556855e6e551c169f83/f0c16/travis_thumbnail.png"
+              srcSet="/static/f53b530a16d87556855e6e551c169f83/69585/travis_thumbnail.png 200w,
+/static/f53b530a16d87556855e6e551c169f83/f0c16/travis_thumbnail.png 387w"
+              style={
+                Object {
+                  "fontFamily": "\\"object-fit: contain; object-position: 50% 50%\\"",
+                  "height": "100%",
+                  "left": 0,
+                  "objectFit": "contain",
+                  "objectPosition": "50% 50%",
+                  "opacity": 0,
+                  "position": "absolute",
+                  "top": 0,
+                  "transition": "opacity 500ms",
+                  "width": "100%",
+                }
+              }
+            />
+          </picture>
+          <noscript
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<picture><source srcset=\\"/static/f53b530a16d87556855e6e551c169f83/69585/travis_thumbnail.png 200w,
+/static/f53b530a16d87556855e6e551c169f83/f0c16/travis_thumbnail.png 387w\\" sizes=\\"(max-width: 387px) 100vw, 387px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 387px) 100vw, 387px\\" srcset=\\"/static/f53b530a16d87556855e6e551c169f83/69585/travis_thumbnail.png 200w,
+/static/f53b530a16d87556855e6e551c169f83/f0c16/travis_thumbnail.png 387w\\" src=\\"/static/f53b530a16d87556855e6e551c169f83/f0c16/travis_thumbnail.png\\" alt=\\"\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+              }
+            }
+          />
+        </div>
+      </a>
+      <div
+        className="Teaser-row"
+      >
+        <h3>
+          Continuous development zdarma s Github, Travis CI a Heroku
+        </h3>
+        <p>
+          V tomto tutorialu vám ukáži, jak nastavit profesionální vývojové prostřední s pomocí continuous deployment.
+        </p>
+        <a
+          className="underline"
+          href="/en-US/blog/continuous-deployment-zdarma"
+          onClick={[Function]}
+        >
+          Více článků
+           
+          »
+        </a>
+      </div>
+    </article>
+  </div>
+  <a
+    className="Teaser-more underline"
+    href="/en-US/blog"
+    onClick={[Function]}
+  >
+    Více článků
+     
+    »
+  </a>
+</section>
+`;

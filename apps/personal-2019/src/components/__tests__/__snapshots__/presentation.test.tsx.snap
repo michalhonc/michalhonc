@@ -1,0 +1,134 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`presentation renders correctly 1`] = `
+<section
+  className="Container Presentation"
+>
+  <h2
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Vybuduji Vám <span class='underline'>kvalitní</span> webovou prezentaci",
+      }
+    }
+    id="presentation"
+  />
+  <div
+    className="Presentation-container"
+  >
+    <div
+      className="Presentation-photo"
+    >
+      <div
+        className=" gatsby-image-wrapper"
+        style={
+          Object {
+            "overflow": "hidden",
+            "position": "relative",
+          }
+        }
+      >
+        <div
+          aria-hidden={true}
+          style={
+            Object {
+              "paddingBottom": "141%",
+              "width": "100%",
+            }
+          }
+        />
+        <picture>
+          <source
+            sizes="(max-width: 400px) 100vw, 400px"
+            srcSet="/static/ea55a42170bb63d820b1b81f9df1bf59/3ba9f/mockup.png 100w,
+/static/ea55a42170bb63d820b1b81f9df1bf59/8ac63/mockup.png 200w,
+/static/ea55a42170bb63d820b1b81f9df1bf59/3891b/mockup.png 400w,
+/static/ea55a42170bb63d820b1b81f9df1bf59/8c332/mockup.png 600w,
+/static/ea55a42170bb63d820b1b81f9df1bf59/bc8e0/mockup.png 800w,
+/static/ea55a42170bb63d820b1b81f9df1bf59/8d364/mockup.png 1500w"
+          />
+          <img
+            alt=""
+            loading="lazy"
+            onLoad={[Function]}
+            sizes="(max-width: 400px) 100vw, 400px"
+            src="/static/ea55a42170bb63d820b1b81f9df1bf59/3891b/mockup.png"
+            srcSet="/static/ea55a42170bb63d820b1b81f9df1bf59/3ba9f/mockup.png 100w,
+/static/ea55a42170bb63d820b1b81f9df1bf59/8ac63/mockup.png 200w,
+/static/ea55a42170bb63d820b1b81f9df1bf59/3891b/mockup.png 400w,
+/static/ea55a42170bb63d820b1b81f9df1bf59/8c332/mockup.png 600w,
+/static/ea55a42170bb63d820b1b81f9df1bf59/bc8e0/mockup.png 800w,
+/static/ea55a42170bb63d820b1b81f9df1bf59/8d364/mockup.png 1500w"
+            style={
+              Object {
+                "height": "100%",
+                "left": 0,
+                "objectFit": "cover",
+                "objectPosition": "center",
+                "opacity": 0,
+                "position": "absolute",
+                "top": 0,
+                "transition": "opacity 500ms",
+                "width": "100%",
+              }
+            }
+          />
+        </picture>
+        <noscript
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<picture><source srcset=\\"/static/ea55a42170bb63d820b1b81f9df1bf59/3ba9f/mockup.png 100w,
+/static/ea55a42170bb63d820b1b81f9df1bf59/8ac63/mockup.png 200w,
+/static/ea55a42170bb63d820b1b81f9df1bf59/3891b/mockup.png 400w,
+/static/ea55a42170bb63d820b1b81f9df1bf59/8c332/mockup.png 600w,
+/static/ea55a42170bb63d820b1b81f9df1bf59/bc8e0/mockup.png 800w,
+/static/ea55a42170bb63d820b1b81f9df1bf59/8d364/mockup.png 1500w\\" sizes=\\"(max-width: 400px) 100vw, 400px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 400px) 100vw, 400px\\" srcset=\\"/static/ea55a42170bb63d820b1b81f9df1bf59/3ba9f/mockup.png 100w,
+/static/ea55a42170bb63d820b1b81f9df1bf59/8ac63/mockup.png 200w,
+/static/ea55a42170bb63d820b1b81f9df1bf59/3891b/mockup.png 400w,
+/static/ea55a42170bb63d820b1b81f9df1bf59/8c332/mockup.png 600w,
+/static/ea55a42170bb63d820b1b81f9df1bf59/bc8e0/mockup.png 800w,
+/static/ea55a42170bb63d820b1b81f9df1bf59/8d364/mockup.png 1500w\\" src=\\"/static/ea55a42170bb63d820b1b81f9df1bf59/3891b/mockup.png\\" alt=\\"\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+            }
+          }
+        />
+      </div>
+      <test-file-stub
+        className="Presentation-lines"
+      />
+    </div>
+    <div
+      className="Presentation-content"
+    >
+      <ul>
+        <li
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "Navrhuji webové stránky, které <b>výborně</b> prezentují Vás a Vaše produkty",
+            }
+          }
+        />
+        <li
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "Vytvářím <b>3x</b> rychlejší stránky oproti průměru",
+            }
+          }
+        />
+        <li
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "Mám rozsáhlé spektrum <b>zkušeností</b>. Od živnostníků až po českou internetovou jedničku.",
+            }
+          }
+        />
+      </ul>
+      <button
+        className="ReservationConsultation"
+        onClick={[Function]}
+        type="button"
+      >
+        Rezervovat konzultaci zdarma
+      </button>
+    </div>
+  </div>
+</section>
+`;

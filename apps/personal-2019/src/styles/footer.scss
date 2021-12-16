@@ -1,0 +1,52 @@
+footer {
+  max-width: 50rem;
+  margin: 10rem auto 12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include respond('phone') {
+    padding: 0 1.6rem;
+    margin: 10rem auto 8rem;
+  }
+
+  & ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 3rem 0;
+
+    & li {
+      transition: all 0.2s;
+      transform: translateY(0);
+      &:hover {
+        transform: translateY(-0.2rem);
+      }
+
+      @include respond('phone') {
+        flex-basis: 25%;
+        text-align: center;
+
+        &:nth-of-type(1),
+        &:nth-of-type(2),
+        &:nth-of-type(3),
+        &:nth-of-type(4) {
+          margin-bottom: 1.2rem;
+        }
+      }
+    }
+  }
+
+  & small {
+    font-size: 1.8rem;
+    @include respond('phone') {
+      font-size: 1.4rem;
+    }
+
+    & a:hover,
+    & a:focus, {
+      color: #4c4c4c;
+    }
+  }
+}

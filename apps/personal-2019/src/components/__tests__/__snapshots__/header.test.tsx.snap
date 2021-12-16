@@ -1,0 +1,212 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`header renders correctly 1`] = `
+<header
+  className="Header"
+>
+  <div
+    className="Header-background gbi--1076601012-fw4frLGxhPUKyvAJLnvQwh gatsby-image-wrapper"
+    style={
+      Object {
+        "backgroundPosition": "center",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "cover",
+        "opacity": 0.99,
+        "position": "relative",
+      }
+    }
+  >
+    <style
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "
+          .Header-background.gbi--1076601012-fw4frLGxhPUKyvAJLnvQwh:before,
+          .Header-background.gbi--1076601012-fw4frLGxhPUKyvAJLnvQwh:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            
+            transition: opacity 0.5s ease 0.25s;
+            background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+          }
+          .Header-background.gbi--1076601012-fw4frLGxhPUKyvAJLnvQwh:before {
+            z-index: -100;
+            
+            
+            opacity: 0; 
+          }
+          .Header-background.gbi--1076601012-fw4frLGxhPUKyvAJLnvQwh:after {
+            z-index: -101;
+            
+            
+            
+          }
+        ",
+        }
+      }
+    />
+    <noscript>
+      <style
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "
+    .Header-background.gbi--1076601012-fw4frLGxhPUKyvAJLnvQwh:before {
+      opacity: 1;
+      background-image: url('/static/45779372c1991322e2cf8821eb9b133f/74fd5/header-background.jpg');
+    }",
+          }
+        }
+      />
+    </noscript>
+  </div>
+  <div
+    className="Header-foreground gbi-779337082-vHngSHeq1Tkwsc3cVa5vNN gatsby-image-wrapper"
+    style={
+      Object {
+        "backgroundPosition": "center",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "cover",
+        "opacity": 0.99,
+        "position": "relative",
+      }
+    }
+  >
+    <style
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "
+          .Header-foreground.gbi-779337082-vHngSHeq1Tkwsc3cVa5vNN:before,
+          .Header-foreground.gbi-779337082-vHngSHeq1Tkwsc3cVa5vNN:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            
+            transition: opacity 0.5s ease 0.25s;
+            background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+          }
+          .Header-foreground.gbi-779337082-vHngSHeq1Tkwsc3cVa5vNN:before {
+            z-index: -100;
+            
+            
+            opacity: 0; 
+          }
+          .Header-foreground.gbi-779337082-vHngSHeq1Tkwsc3cVa5vNN:after {
+            z-index: -101;
+            
+            
+            
+          }
+        ",
+        }
+      }
+    />
+    <noscript>
+      <style
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "
+    .Header-foreground.gbi-779337082-vHngSHeq1Tkwsc3cVa5vNN:before {
+      opacity: 1;
+      background-image: url('/static/96b4dfdae8e006ed6b85bfb9aadd902b/0e6e2/header-foreground.png');
+    }",
+          }
+        }
+      />
+    </noscript>
+  </div>
+  <div
+    className="Header-hero"
+  >
+    <h1>
+      <div>
+        Jsem
+      </div>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<b>VÝVOJÁŘ</b> a <b>NÁVRHÁŘ</b>",
+          }
+        }
+      />
+      <div>
+        Který
+      </div>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "vytváří <b>RYCHLÉ</b> a <b>MODERNÍ</b> webové stránky",
+          }
+        }
+      />
+    </h1>
+    <button
+      className="ReservationConsultation"
+      onClick={[Function]}
+      type="button"
+    >
+      Rezervovat konzultaci zdarma
+    </button>
+  </div>
+  <div
+    className="Header-logo"
+  >
+    <div>
+      <test-file-stub
+        className="Header-logo-background"
+      />
+      <a
+        aria-label="Michal Honc Logo"
+        href="/en-US/"
+        onClick={[Function]}
+      >
+        <test-file-stub
+          className="Header-logo-foreground"
+        />
+      </a>
+    </div>
+  </div>
+  <nav>
+    <ul
+      className="Header-navigation"
+    >
+      <li>
+        <a
+          href="/en-US/blog"
+          onClick={[Function]}
+        >
+          Blog
+        </a>
+      </li>
+      <li>
+        <a
+          href="#kontakty"
+        >
+          Kontakty
+        </a>
+      </li>
+    </ul>
+    <button
+      aria-label="Change language to english"
+      className="Header-changeLocale"
+      onClick={[Function]}
+      type="button"
+    >
+      <test-file-stub />
+    </button>
+  </nav>
+</header>
+`;

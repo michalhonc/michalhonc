@@ -1,0 +1,121 @@
+.Teaser {
+  height: 55rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 12rem auto 18rem;
+  padding: 0;
+
+  @include respond('tab-port') {
+    margin: 12rem auto 12rem;
+  }
+
+  &-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    height: 100%;
+    margin: 3rem 0 0 0;
+
+    @include respond('tab-port') {
+      flex-flow: column-reverse;
+      margin: 2rem 1rem;
+    }
+  }
+
+  &-more {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--c-beta);
+
+    @include respond('tab-port') {
+      font-size: 2rem;
+      padding: 0 1rem;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  & article {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    flex: 1;
+    height: 50%;
+    padding: 2rem;
+
+    @include respond('tab-port') {
+      width: 100%;
+      height: auto;
+      padding: 0.2rem;
+    }
+
+    & a:hover {
+      text-decoration: underline;
+    }
+
+    &:not(:last-of-type) {
+      flex-direction: row;
+
+      & .gatsby-image-wrapper {
+        width: 20rem;
+        flex-shrink: 0;
+        margin-right: 2rem;
+
+        @include respond('tab-port') {
+          width: 10rem;
+          margin-right: 1rem;
+        }
+      }
+
+      & > .Teaser-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+      }
+    }
+
+    &:last-of-type {
+      height: 100%;
+      width: 40%;
+
+      @include respond('tab-port') {
+        flex-direction: row;
+        width: 100%;
+      }
+
+
+      & .gatsby-image-wrapper {
+        max-height: 17rem;
+        @include respond('tab-port') {
+          width: 10rem;
+          margin-right: 1rem;
+        }
+      }
+
+      & > .Teaser-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+      }
+    }
+
+    & a,
+    & p {
+      font-size: 2rem;
+      color: var(--c-beta);
+
+      @include respond('tab-port') {
+        font-size: 1.6rem;
+      }
+    }
+
+    & a {
+      color: var(--c-black);
+    }
+
+  }
+}

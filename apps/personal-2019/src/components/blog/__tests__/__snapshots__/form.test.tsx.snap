@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`form renders correctly 1`] = `
+<section
+  className="Form"
+>
+  <div
+    className="Form-left"
+  >
+    <test-file-stub />
+  </div>
+  <div
+    className="Form-right"
+  >
+    <h2>
+      Přidejte se do odběru!
+    </h2>
+    <p>
+      Přidejte se do odběru novinek z blogu
+    </p>
+    <form
+      data-state="idle"
+      onSubmit={[Function]}
+    >
+      <input
+        onChange={[Function]}
+        placeholder="Vaše jméno"
+        required={true}
+        type="text"
+      />
+      <input
+        onChange={[Function]}
+        placeholder="E-mail"
+        required={true}
+        type="email"
+      />
+      <div
+        className="Form-message"
+      />
+      <input
+        type="submit"
+        value="Odeslat"
+      />
+    </form>
+  </div>
+</section>
+`;

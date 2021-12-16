@@ -1,0 +1,142 @@
+@import 'mixins';
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+.gatsby-highlight {
+  margin: 1.5em -2rem;
+  background: #272822;
+  border-radius: 1rem;
+
+  @include respond('phone') {
+    border-radius: 0rem;
+  }
+}
+
+.gatsby-highlight-code-line {
+  background-color: #49483E;
+  display: block;
+  margin: 0 -2rem;
+  padding: 0 2rem 0 1.75rem;
+  border-left: 0.25rem solid #A6E22E;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #fff;
+  background: none;
+  font-family: Consolas,Menlo,Monaco,source-code-pro,Courier New,monospace;
+  font-size: 1.6rem;
+  text-align: left;
+  white-space: pre-wrap;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  border-radius: 1rem;
+  tab-size: 2;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+@media print {
+  code[class*="language-"],
+  pre[class*="language-"] {
+    text-shadow: none;
+  }
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 2rem;
+  overflow: auto;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: 0.5rem 0.75rem;
+  border-radius: .3em;
+  white-space: normal;
+  font-size: 1.6rem;
+  color: var(--c-alpha);
+  background: var(--c-alpha-light);
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: slategray;
+}
+
+.token.punctuation {
+  color: #fff;
+}
+
+.namespace {
+  opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #F92672;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #A6E22E;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #F92672;
+}
+
+.token.attr-value {
+  color: #FFE792;
+}
+
+.token.atrule,
+.token.keyword {
+  color: #66D9EF;
+}
+
+.token.function,
+.token.class-name {
+  color: #fff;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #FFE792;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}

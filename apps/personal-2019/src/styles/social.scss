@@ -1,0 +1,64 @@
+.Social {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @include respond(thousand) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &-wrapper {
+    position: relative;
+    border-radius: 2rem;
+    border: 0.5rem solid var(--c-beta);
+    padding: 3.5rem 3rem;
+    width: 49rem;
+    min-height: 70rem;
+    height: 70rem;
+
+    @include respond(phone) {
+      max-width: 95%;
+      height: initial;
+      min-height: initial;
+      padding: 3.5rem 1.5rem;
+    }
+
+    @include respond(thousand) {
+      &:not(:first-of-type) {
+        margin-top: 5rem;
+      }
+    }
+  }
+
+  &-icon {
+    position: absolute;
+    top:-4rem;
+    left: 3rem;
+    padding: 0.5rem;
+    background-color: var(--c-white);
+
+    & svg {
+      width: 5rem;
+      height: 5rem;
+      fill: var(--c-alpha);
+    }
+  }
+
+  &-profile {
+    position: absolute;
+    top: -3rem;
+    left: 8rem + 1.5rem;
+    font-size: 1.8rem;
+    color: var(--c-beta);
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &-content {
+
+  }
+}

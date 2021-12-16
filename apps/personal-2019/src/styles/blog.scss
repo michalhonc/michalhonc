@@ -1,0 +1,305 @@
+@import './mixins';
+
+.gatsby-resp-image-figure {
+  margin: 2rem 0;
+}
+
+.gatsby-resp-image-figcaption {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.Blog {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--c-beta);
+  overflow-x: hidden;
+  background: linear-gradient(180deg, rgba(0, 150, 136, 0.18), transparent);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+  &-share.before {
+    box-shadow: none;
+  }
+
+  & nav section &-changeLocale {
+    & > svg {
+      height: 2.4rem;
+      width: 2.4rem;
+    }
+  }
+
+  & article {
+    &:after,
+    &:before {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+
+  &-thumbnail {
+    margin-top: 1rem;
+    & img {
+      float: right;
+      max-height: 15rem;
+      max-width: 25rem;
+      margin: 0 0 1.5rem 1.5rem;
+
+      @include respond('phone') {
+        max-height: 8rem;
+        max-width: 12rem;
+      }
+    }
+  }
+
+  &-header {
+    height: 25rem;
+
+    .Header-navigation {
+      & a {
+          color: var(--c-alpha);
+
+          &:hover {
+            color: var(--c-alpha);
+            text-decoration: underline;
+          }
+      }
+    }
+
+    .Header-changeLocale svg {
+      fill: var(--c-alpha);
+      width: 2.4rem;
+      height: auto;
+    }
+  }
+
+  & main {
+    max-width: 78rem;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 4rem;
+
+    @include respond('phone') {
+      padding: 0 2rem;
+    }
+
+    & header {
+      & h1 {
+        font-size: 4.2rem;
+        line-height: 5.2rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+
+        @include respond('phone') {
+          font-size: 3.2rem;
+          line-hegiht: 4.2rem;
+        }
+      }
+
+      & span {
+        font-size: 1.6rem;
+
+        @include respond('phone') {
+          font-size: 1.4rem;
+        }
+      }
+
+      & a {
+        box-shadow: inset 0 -0.6em var(--c-alpha-light);
+
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+
+    & section {
+      font-size: 2.1rem;
+      line-height: 3.3rem;
+      font-weight: 400;
+
+      @include respond('phone') {
+        font-size: 1.8rem;
+        line-height: 3rem;
+      }
+
+      & a {
+        box-shadow: inset 0 -0.6em var(--c-alpha-light);
+
+        &:hover {
+          color: #000;
+        }
+      }
+
+      & b {
+        font-weight: 700;
+      }
+
+      & p {
+        margin-top: 1rem;
+
+        @include respond('phone') {
+          margin-top: 0.75rem;
+        }
+      }
+
+      & h2 {
+        font-size: 3.2rem;
+        line-height: 4rem;
+        font-weight: normal;
+        margin-top: 2rem;
+        text-align: left;
+
+        @include respond('phone') {
+          font-size: 2.8rem;
+          line-height: 3rem;
+          margin-top: 1.5rem;
+        }
+      }
+
+      & h3 {
+        font-size: 2.4rem;
+        line-height: 3rem;
+        font-weight: 600;
+        margin: 3.5rem 0 1rem;
+        text-align: left;
+
+        @include respond('phone') {
+          font-size: 2.2rem;
+          line-height: 2.5rem;
+          margin: 2.5rem 0 1rem;
+        }
+      }
+
+      & h4 {
+        font-size: 1.9rem;
+        line-height: 2.4rem;
+        font-weight: 600;
+        margin-top: 1rem;
+        text-align: left;
+
+        @include respond('phone') {
+          font-size: 1.6rem;
+          line-height: 2rem;
+          margin-top: 0.75rem;
+        }
+      }
+
+      & ul {
+        list-style: lower-alpha;
+        margin-left: 5rem;
+        padding-left: 1rem;
+      }
+
+      & ol {
+        list-style: decimal;
+        margin-left: 5rem;
+        padding-left: 1rem;
+      }
+
+      & img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  &-recent {
+    display: flex;
+
+    @include respond('phone') {
+      flex-direction: column;
+    }
+
+    &:hover {
+      & h2 {
+        text-decoration: underline;
+      }
+    }
+
+    & .gatsby-image-wrapper {
+      width: 25rem;
+      height: auto;
+
+      @include respond('phone') {
+        display: none;
+      }
+    }
+
+    &-header {
+      padding-left: 2rem;
+      flex: 1;
+
+      @include respond('phone') {
+        padding: 0;
+      }
+
+      & h2 {
+        font-size: 3.2rem;
+        line-height: 4rem;
+        font-weight: normal;
+        text-align: left;
+        padding: 1rem 0;
+      }
+
+      & p {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  & hr {
+    margin: 3rem -5rem;
+    border: none;
+    border-top: 0.1rem solid var(--c-alpha-light);
+  }
+
+  &-past {
+    display: flex;
+    margin-bottom: 5rem;
+
+    &:hover {
+      & h2 {
+        text-decoration: underline;
+      }
+    }
+
+    & .gatsby-image-wrapper {
+      width: 15rem;
+      height: 10rem;
+    }
+
+    &-header {
+      padding-left: 2rem;
+      flex: 1;
+
+      & h2 {
+        font-size: 2rem;
+        text-align: left;
+        padding: 1rem 0;
+        margin: 0;
+      }
+
+      & p {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  &-goBack {
+    position: absolute;
+    top: 1rem;
+    left: -2rem;
+
+    @include respond('phone') {
+      top: -3rem;
+      left: 2rem;
+    }
+
+    & svg {
+      width: 2.4rem;
+      height: 2.4rem;
+      fill: var(--c-alpha);
+    }
+  }
+}

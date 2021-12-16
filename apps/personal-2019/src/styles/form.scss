@@ -1,0 +1,94 @@
+@import 'mixins';
+
+.Form {
+  display: flex;
+  border-radius: 1rem;
+  border: 0.5rem solid var(--c-alpha-light);
+  margin: 5rem -2rem 0;
+
+  @include respond('phone') {
+    border-radius: 0;
+  }
+
+  &-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    background: var(--c-alpha-light);
+    & svg {
+      width: 5rem;
+      height: 5rem;
+      fill: var(--c-alpha);
+    }
+  }
+
+  &-message {
+    color: #F92672;
+    height: 3rem;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    & svg {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+
+  &-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 3;
+    padding: 0 2rem 2rem;
+
+    & form {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1rem;
+
+      & > *:not(:last-of-type) {
+        margin-bottom: 1rem;
+      }
+
+      & input[type="email"],
+      & input[type="text"] {
+        outline: none;
+        padding: 1rem;
+        border-radius: 0.4rem;
+        border: 1px solid #ccc;
+
+        @include respond('phone') {
+          max-width: 22rem;
+        }
+
+        &:focus {
+          border: 1px solid var(--c-alpha);
+        }
+      }
+
+      & input[type="submit"] {
+        outline: none;
+        background: var(--c-alpha);
+        color: var(--c-white);
+        padding: 1rem;
+        border-radius: 0.8rem;
+        border: none;
+        width: 50%;
+        cursor: pointer;
+      }
+
+      &[data-state="error"] {
+        & input[type="email"] {
+          border: 1px solid #F92672;
+        }
+
+        & input[type="submit"] {
+          cursor: default;
+          pointer-events: none;
+          background: #c5c5c5;
+        }
+
+      }
+    }
+  }
+}
