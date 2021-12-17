@@ -1,6 +1,6 @@
 {
-  "name": "turborepo-basic-shared",
-  "version": "0.0.0",
+  "name": "michalhonc-monorepo",
+  "version": "0.0.1",
   "private": true,
   "workspaces": [
     "apps/*",
@@ -9,6 +9,8 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
+    "dev:all": "turbo run dev --parallel",
+    "dev:personal": "turbo run dev --parallel --ignore=\"apps/**/*\" --ignore=\"!/apps/personal-2022/**/*\"",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md}\""
   },
